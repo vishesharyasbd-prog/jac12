@@ -1,43 +1,88 @@
-<div class="point">
-    <div class="tick">✓</div>
-    <span>Join the Jackpot King Guru community</span>
-  </div>
+ .footer{
+    margin-top:20px;
+    font-size:10px;
+    color:#444;
+}
 
-  <div class="point">
-    <div class="tick">✓</div>
-    <span>Get the latest channel updates</span>
-  </div>
+@media(max-width:380px){
+    h1{
+        font-size:26px;
+    }
 
-  <div class="point">
-    <div class="tick">✓</div>
-    <span>Stay connected on Telegram</span>
-  </div>
+    .logo{
+        width:82px;
+        height:82px;
+        font-size:37px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">👑</div>
+
+    <h1>JACKPOT KING GURU</h1>
+
+    <div class="subtitle">
+        Join the official Telegram channel
+        <br>
+        and stay connected with the latest updates.
+    </div>
+
+    <div class="box">
+
+        <div class="badge">
+            👑 OFFICIAL CHANNEL
+        </div>
+
+        <div class="point">
+            <div class="tick">✓</div>
+            <span>Official Jackpot King Guru updates</span>
+        </div>
+
+        <div class="point">
+            <div class="tick">✓</div>
+            <span>Direct Telegram community access</span>
+        </div>
+
+        <div class="point">
+            <div class="tick">✓</div>
+            <span>Stay updated with every new post</span>
+        </div>
+
+        <a
+            href="https://t.me/+zm-nDu_ZD48zYmU1"
+            target="_blank"
+            class="join"
+            id="joinButton"
+        >
+            🚀 JOIN TELEGRAM
+        </a>
+
+        <div class="note">
+            🔒 Securely redirected to Telegram
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Jackpot King Guru
+    </div>
 
 </div>
 
-<a
-  id="joinButton"
-  class="join"
-  href="https://t.me/+zm-nDu_ZD48zYmU1"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  🚀 JOIN TELEGRAM
-</a>
-
-<div class="small">
-  🔒 You will be redirected to Telegram
-</div>
-
-  </div>  <div class="footer">
-    © 2026 Jackpot King Guru
-  </div></div><script>
+<script>
 document.getElementById("joinButton").addEventListener("click",function(){
 
-  if(typeof fbq === "function"){
-    fbq("track","Subscribe");
-  }
+    if(typeof fbq === "function"){
+        fbq("track","Subscribe");
+    }
 
 });
-</script></body>
+</script>
+
+</body>
 </html>
