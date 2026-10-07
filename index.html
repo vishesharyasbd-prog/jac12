@@ -1,73 +1,9 @@
-
-background:linear-gradient(
-    135deg,
-    #6755ff,
-    #9c4dff,
-    #426dff
-  );
-
-  border:1px solid rgba(255,255,255,.28);
-
-  box-shadow:
-    0 0 15px rgba(112,82,255,.8),
-    0 0 40px rgba(112,82,255,.4),
-    inset 0 1px 1px rgba(255,255,255,.3);
-
-  transition:.25s ease;
-  overflow:hidden;
-}
-
-/* Button shine */
-.join-btn:before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:-100%;
-
-  width:60%;
-  height:100%;
-
-  background:linear-gradient(
-    90deg,
-    transparent,
-    rgba(255,255,255,.30),
-    transparent
-  );
-
-  transform:skewX(-20deg);
-  animation:shine 3s infinite;
-}
-
-@keyframes shine{
-  0%{left:-100%}
-  35%,100%{left:150%}
-}
-
-.join-btn:hover{
-  transform:translateY(-3px);
-
-  box-shadow:
-    0 0 25px rgba(112,82,255,1),
-    0 0 65px rgba(112,82,255,.55);
-}
-
-.join-btn:active{
-  transform:scale(.97);
-}
-
-.telegram-icon{
-  width:25px;
-  height:25px;
-
-  border-radius:50%;
-
-  display:flex;
+ display:flex;
   align-items:center;
   justify-content:center;
 
-  background:rgba(255,255,255,.18);
-
-  font-size:14px;
+  border-radius:50%;
+  background:#ffffff22;
 }
 
 .trust{
@@ -78,41 +14,33 @@ background:linear-gradient(
   align-items:center;
   gap:7px;
 
-  color:rgba(255,255,255,.45);
+  color:#ffffff70;
   font-size:11px;
 }
 
-.green-dot{
+.dot{
   width:7px;
   height:7px;
 
   border-radius:50%;
 
   background:#36e58b;
-
   box-shadow:0 0 10px #36e58b;
 }
 
 .footer{
   margin-top:25px;
-
-  color:rgba(255,255,255,.28);
+  color:#ffffff45;
   font-size:10px;
 }
 
 @media(max-width:420px){
-
   .card{
     padding:32px 21px 25px;
   }
 
   h1{
-    font-size:31px;
-  }
-
-  .logo{
-    width:90px;
-    height:90px;
+    font-size:30px;
   }
 }
 </style>
@@ -120,52 +48,46 @@ background:linear-gradient(
 
 <body>
 
-<div class="wrapper">
+<div class="card">
 
-  <section class="card">
+  <div class="logo">
+    GTB
+  </div>
 
-    <div class="logo">
-      GTB
-    </div>
+  <div class="badge">
+    <span class="check">✓</span>
+    Official Channel
+  </div>
 
-    <div class="verified">
-      <span class="check">✓</span>
-      Official Channel
-    </div>
+  <h1>GURU THE BRAND</h1>
 
-    <h1>GURU THE BRAND</h1>
+  <p class="description">
+    Welcome to the official Guru The Brand channel.
+    Join our Telegram community and stay connected.
+  </p>
 
-    <p class="description">
-      Welcome to the official Guru The Brand channel.
-      Join our Telegram community and stay connected.
-    </p>
+  <div class="line"></div>
 
-    <div class="divider"></div>
+  <a
+    class="join"
+    href="https://t.me/+zm-nDu_ZD48zYmU1"
+    onclick="trackSubscribe()"
+  >
+    <span class="telegram">➤</span>
+    JOIN TELEGRAM
+  </a>
 
-    <!-- TELEGRAM JOIN BUTTON -->
-    <a
-      class="join-btn"
-      href="https://t.me/+zm-nDu_ZD48zYmU1"
-      onclick="trackSubscribe()"
-    >
-      <span class="telegram-icon">➤</span>
-      JOIN TELEGRAM
-    </a>
+  <div class="trust">
+    <span class="dot"></span>
+    Secure & Official Telegram Link
+  </div>
 
-    <div class="trust">
-      <span class="green-dot"></span>
-      Secure & Official Telegram Link
-    </div>
-
-    <div class="footer">
-      © 2026 GURU THE BRAND • All Rights Reserved
-    </div>
-
-  </section>
+  <div class="footer">
+    © 2026 GURU THE BRAND
+  </div>
 
 </div>
 
-<!-- ================= SUBSCRIBE EVENT ================= -->
 <script>
 function trackSubscribe(){
 
